@@ -14,7 +14,7 @@
     <title>EliteHomes - Your Dream Home Awaits</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
-  <body data-bs-spy="scroll">
+  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-root-margin="-80px 0px -60% 0px" tabindex="0">
     <!-- header -->
 
     <header id="header" class="fixed-top p-2 bg-white shadow-lg">
@@ -29,14 +29,131 @@
               <li class="nav-item">
                 <a class="nav-link position-relative active" href="#hero">Home</a>
               </li>
-              <li class="nav-item dropdown">
+
+              <!-- dropdown list -->
+
+              <li class="nav-item dropdown dropdown-mega">
                 <a class="nav-link position-relative dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Properties</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+
+                <div class="dropdown-menu mega-menu">
+                  <div class="row g-3 g-lg-4">
+                    <!-- Featured Properties -->
+                    <div class="col-12 col-lg-3">
+                      <div class="mega-col">
+                        <h3 class="mega-title">Featured Properties</h3>
+                        <div class="mega-featured">
+                          <a href="#" class="mega-property">
+                            <img src="./images/luxury-villa.jpeg" alt="Luxury Home" width="64" height="64" loading="lazy" class="mega-thumb object-fit-cover" />
+                            <div class="ms-3">
+                              <h4 class="mega-property-name">Luxury Villa</h4>
+                              <p class="mega-property-meta">$2.5M • 5 beds • 4 baths</p>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-property">
+                            <img src="./images/modern-apartment.jpeg" alt="Modern Apartment" width="64" height="64" loading="lazy" class="mega-thumb object-fit-cover" />
+                            <div class="ms-3">
+                              <h4 class="mega-property-name">Modern Apartment</h4>
+                              <p class="mega-property-meta">$850K • 2 beds • 2 baths</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Property Types -->
+                    <div class="col-12 col-lg-3">
+                      <div class="mega-col">
+                        <h3 class="mega-title">Property Types</h3>
+                        <ul class="mega-types list-unstyled mb-0">
+                          <li>
+                            <a href="#" class="mega-type"><i class="fa-solid fa-house fa-fw"></i><span class="mega-type-text">Single Family Homes</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="mega-type"><i class="fa-solid fa-building fa-fw"></i><span class="mega-type-text">Apartments</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="mega-type"><i class="fa-solid fa-warehouse fa-fw"></i><span class="mega-type-text">Condominiums</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="mega-type"><i class="fa-solid fa-store fa-fw"></i><span class="mega-type-text">Commercial</span></a>
+                          </li>
+                          <li>
+                            <a href="#" class="mega-type"><i class="fa-solid fa-tree fa-fw"></i><span class="mega-type-text">Land &amp; Lots</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Popular Locations -->
+                    <div class="col-12 col-lg-3">
+                      <div class="mega-col">
+                        <h3 class="mega-title">Popular Locations</h3>
+                        <div class="mega-locations">
+                          <a href="#" class="mega-location" style="background-image: url(./images/new-york.jpeg)">
+                            <div class="mega-location-body">
+                              <span class="mega-location-name">New York</span>
+                              <span class="mega-location-count">2,145 Properties</span>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-location" style="background-image: url(./images/los-angeles.jpeg)">
+                            <div class="mega-location-body">
+                              <span class="mega-location-name">Los Angeles</span>
+                              <span class="mega-location-count">1,873 Properties</span>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-location" style="background-image: url(./images/miami.jpeg)">
+                            <div class="mega-location-body">
+                              <span class="mega-location-name">Miami</span>
+                              <span class="mega-location-count">1,526 Properties</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="col-12 col-lg-3">
+                      <div class="mega-col">
+                        <h3 class="mega-title">Resources</h3>
+                        <div class="mega-resources">
+                          <a href="#" class="mega-resource res-violet">
+                            <span class="res-deco"></span>
+                            <div class="res-body">
+                              <div class="res-head">
+                                <span class="res-icon"><i class="fa-solid fa-book-open"></i></span>
+                                <h4 class="res-title">Buying Guide</h4>
+                              </div>
+                              <p class="res-text">Essential tips and strategies for first-time homebuyers</p>
+                              <div class="res-more"><span>Learn More</span><i class="fa-solid fa-arrow-right res-arrow"></i></div>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-resource res-green">
+                            <span class="res-deco"></span>
+                            <div class="res-body">
+                              <div class="res-head">
+                                <span class="res-icon"><i class="fa-solid fa-chart-line"></i></span>
+                                <h4 class="res-title">Investment Tips</h4>
+                              </div>
+                              <p class="res-text">Smart strategies for property investment success</p>
+                              <div class="res-more"><span>Learn More</span><i class="fa-solid fa-arrow-right res-arrow"></i></div>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-resource res-purple">
+                            <span class="res-deco"></span>
+                            <div class="res-body">
+                              <div class="res-head">
+                                <span class="res-icon"><i class="fa-solid fa-file-lines"></i></span>
+                                <h4 class="res-title">Market Reports</h4>
+                              </div>
+                              <p class="res-text">In-depth analysis of real estate market trends</p>
+                              <div class="res-more"><span>Learn More</span><i class="fa-solid fa-arrow-right res-arrow"></i></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link position-relative" href="#our-Services">Services</a>
